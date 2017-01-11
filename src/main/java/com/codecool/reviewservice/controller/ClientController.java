@@ -16,7 +16,6 @@ public class ClientController {
 
 
     // create new client & save it to the database & sending registration email
-    // TODO: 2017.01.04. integrate email sending service
     public static ModelAndView newClient(Request request, Response response) {
         Client newClient = new Client(request.queryParams("name"), request.queryParams("email"));
         logger.info("New client created: {}", newClient.toString());

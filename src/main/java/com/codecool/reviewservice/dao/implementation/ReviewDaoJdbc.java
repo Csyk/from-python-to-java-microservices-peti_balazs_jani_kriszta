@@ -16,7 +16,6 @@ public class ReviewDaoJdbc implements ReviewDao {
     private static final Logger logger = LoggerFactory.getLogger(ReviewDaoJdbc.class);
     private DBConnection connection = new DBConnection();
     private static ReviewDaoJdbc instance = null;
-//    public ArrayList<Review> reviews = new ArrayList<>();
     private String sql;
 
     public static ReviewDaoJdbc getInstance(){
